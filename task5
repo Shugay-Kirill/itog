@@ -1,0 +1,12 @@
+cat > pats
+cat > pack_animals
+cat pats pack_animals > Friends_of_Man
+mkdir animals
+mv Friends_of_Man pack_animals pats animals/ 
+sudo apt update
+sudo apt install mysql-server
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo dpkg -l | grep chrome
+sudo dpkg -r google-chrome-stable
+
+
