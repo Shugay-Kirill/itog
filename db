@@ -1,0 +1,55 @@
+CREATE DATABASE gbhw;
+USE gbhw;
+
+CREATE TABLE pets
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    nameAnimals VARCHAR(20), 
+    comand VARCHAR(40)
+);
+CREATE TABLE pack
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    nameAnimals VARCHAR(20),
+    comand VARCHAR(40)
+);
+
+CREATE TABLE лошади
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    nameAnimals VARCHAR(20),
+    comand VARCHAR(40)
+);
+CREATE TABLE верблюды 
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT NOT NULL,
+    nameAnimals VARCHAR(20),
+    comand VARCHAR(40)
+);
+CREATE TABLE ослы
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    nameAnimals VARCHAR(20),
+    comand VARCHAR(40)
+);
+
+INSERT INTO лошади (age, nameAnumals, comand)
+VALUES(1, "PDEf", " Not");
+
+INSERT INTO ослы (age, nameAnumals, comand)
+VALUES(1, "PDadsaEf", " Not");
+
+INSERT INTO верблюды (age, nameAnumals, comand)
+VALUES(1, "Dif", " Not");
+
+DROP TABLE верблюды;
+
+SELECT * FROM лошади, ослы;
+SELECT * FROM лошади, ослы, pets, pack
+WHERE age BETWEEN 1 and 3; 
+SELECT * FROM лошади, ослы, pets, pack;
